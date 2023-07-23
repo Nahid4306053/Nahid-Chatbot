@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="590435469496-hh58for0rnt8vl80r7pm8njtctqd9l5e.apps.googleusercontent.com">
   <link rel="shortcut icon" href="web_logo.png" type="image/x-icon">
   <title>Nahid - Chat Boot</title>
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
@@ -40,8 +41,8 @@
 </head>  
   
 <body style="font-family: 'Roboto', sans-serif; ">
- <div id="chatpanel" class="bg-white min-w-[300px]  flex flex-col justify-between  transition-all duration-300  rounded-xl  chatpanel cahtactive"> 
-  <div id="chatmassage" class="caht_masage" >
+ <div id="chatpanel" class="bg-white min-w-[300px]  flex flex-col justify-between   transition-all duration-300  rounded-xl  chatpanel cahtactive"> 
+  <div id="chatmassage" class="caht_masage " >
     <div class="chat chat-start">  
       <div class="chat-image avatar">
         <div class="w-10 rounded-full">
@@ -66,6 +67,7 @@
     </div>     -->  
      
   </div>
+  <button onclick="onSignIn()" >sign In</button>
   <div id="useform" class="form w-full flex"> 
     <input type="text" placeholder="Type what you want!" id="user_msg"  class="w-full focus:outline-none placeholder:capitalize  bg-white rounded-lg px-2 py-2">      
     <button id="user_btn"><i class="fa-regular fa-paper-plane-top"></i></button> 
@@ -73,6 +75,7 @@
  </div>       
  <button id="open_chatbooot"><i class="fa-solid fa-message-lines"></i></button>
   <!-- header start  -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="main.js"></script> 
 </body>
 
