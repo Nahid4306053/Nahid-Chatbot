@@ -125,7 +125,7 @@ if(scrl > 405 ){
   chatmassage.scrollTo({top: scrl, behavior: "smooth"}); 
  }
   
-const apiKey = '';
+const apiKey = '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';
 
 
 fetch('https://free.churchless.tech/v1/chat/completions', {
