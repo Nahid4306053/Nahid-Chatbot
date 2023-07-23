@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">       
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hellow tawlaind welcome to my procect</title>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/sharp-regular.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+     
+       .box_container {
+            max-width: 1440px;
+            padding: 0px 60px;    
+            width: 100%;
+            box-sizing: border-box;
+        }
+          @media screen and (max-width:599px) {
+            .box_container {
+                padding: 0px 15px;
+            }
+        }
+        @media screen and (min-width:600px) and (max-width:992px) {
+            .box_container {
+                padding: 0px 30px;
+            }
+        }     
+
+  </style>
+</head>  
+  
+<body style="font-family: 'Roboto', sans-serif; ">
+ <div id="chatpanel" class="bg-white min-w-[300px]  flex flex-col justify-between  transition-all duration-300  rounded-xl  chatpanel cahtactive"> 
+  <div id="chatmassage" class="caht_masage" >
+    <div class="chat chat-start">  
+      <div class="chat-image avatar">
+        <div class="w-10 rounded-full">
+          <img src="web_logo.png" />
+        </div>
+      </div>
+      <div class="chat-header">
+        Md Nahid Hasan
+      </div>
+      <div class="chat-bubble">Hello! how can i help you?</div>
+    </div>
+    <!-- <div class="chat chat-end ">
+      <div class="chat-image avatar">
+        <div class="w-10 rounded-full">
+          <img src="images.png" />
+        </div>
+      </div>
+      <div class="chat-header">
+        User
+      </div>
+      <div class="chat-bubble">I hate lore1 you!</div>
+    </div>     -->  
+     
+  </div>
+  <div id="useform" class="form w-full flex"> 
+    <input type="text" placeholder="Type what you want!" id="user_msg"  class="w-full focus:outline-none placeholder:capitalize  bg-white rounded-lg px-2 py-2">      
+    <button id="user_btn"><i class="fa-regular fa-paper-plane-top"></i></button> 
+  </div>      
+ </div>       
+ <button id="open_chatbooot"><i class="fa-solid fa-message-lines"></i></button>
+  <!-- header start  -->
+<script src="main.js"></script> 
+</body>
+
+</html>  
