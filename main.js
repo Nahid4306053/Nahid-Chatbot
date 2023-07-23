@@ -125,10 +125,10 @@ if(scrl > 405 ){
   chatmassage.scrollTo({top: scrl, behavior: "smooth"}); 
  }
   
-const apiKey = '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';
+const apiKey = '';
 
 
-fetch('https://api.openai.com/v1/chat/completions', {
+fetch('https://free.churchless.tech/v1/chat/completions', {
   method: 'POST',
   headers: { 
     'Content-Type': 'application/json',
@@ -142,7 +142,7 @@ fetch('https://api.openai.com/v1/chat/completions', {
   .then(response => response.json())
   .then(data => {
 
-
+   
     var respomassage = data.choices[0].message.content;
 
     setTimeout(()=>{  
@@ -187,11 +187,11 @@ fetch('https://api.openai.com/v1/chat/completions', {
     console.error(error);
 
     if(405 < scrl ){ 
-        chatmassage.scrollTo({top: scrols, behavior: "smooth"}); 
+        chatmassage.scrollTo({top: scrl, behavior: "smooth"}); 
       }
   
   });
 
 
-
+   
 })
