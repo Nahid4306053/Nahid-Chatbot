@@ -197,31 +197,31 @@ fetch('https://free.churchless.tech/v1/chat/completions', {
 })
 
 
-function onSignIn() {
-  gapi.load('auth2', function () {
-    gapi.auth2.init({
-      client_id: '590435469496-hh58for0rnt8vl80r7pm8njtctqd9l5e',
-    }).then(function () {
-      var profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-      console.log('Name: ' + profile.getName());
-      console.log('Image URL: ' + profile.getImageUrl());
-      console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-    });
-  });
-}
-
-// function onSignIn(googleUser) {
-//   var profile = googleUser.getBasicProfile();
-//   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-//   console.log('Name: ' + profile.getName());
-//   console.log('Image URL: ' + profile.getImageUrl());
-//   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+// function onSignIn() {
+//   gapi.load('auth2', function () {
+//     gapi.auth2.init({
+//       client_id: '590435469496-hh58for0rnt8vl80r7pm8njtctqd9l5e.apps.googleusercontent.com',
+//     }).then(function () {
+//       var profile = googleUser.getBasicProfile();
+//       console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+//       console.log('Name: ' + profile.getName());
+//       console.log('Image URL: ' + profile.getImageUrl());
+//       console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+//     });
+//   });
 // }
 
-function signOut() {
-  var auth2 = gapi.auth2.getAuthInstance();
-  auth2.signOut().then(function () {
-    console.log('User signed out.');
-  });
-}
+// // function onSignIn(googleUser) {
+// //   var profile = googleUser.getBasicProfile();
+// //   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+// //   console.log('Name: ' + profile.getName());
+// //   console.log('Image URL: ' + profile.getImageUrl());
+// //   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+// // }
+
+// function signOut() {
+//   var auth2 = gapi.auth2.getAuthInstance();
+//   auth2.signOut().then(function () {
+//     console.log('User signed out.');
+//   });
+// }
